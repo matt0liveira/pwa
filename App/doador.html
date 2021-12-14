@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doador</title>
+    <link rel="stylesheet" href="css/doador.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <a href="home.html" id="btn-voltar" class="btn-voltar"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+    <div class="container">
+        <form enctype="multipart/form-data" id="forms-doador">
+            <div class="row">
+                <div class="col s12">
+                    <h1>Torne-se um doador</h1>
+                </div>
+                <div class="col s12 campo-img">
+                    <img src="img/user.png" id="previewImg">
+                </div>
+                <div class="file-field input-field col12">
+                    <div class="btn blue waves-effect waves-light">
+                        <span><i class="material-icons left">file_upload</i>Upload</span>
+                        <input type="file" id="file" name="foto" accept="image/jpeg,image/png"/>
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                     </div>
+                </div>
+                <div class="input-field col s12 m6">
+                    <label for="nome">Nome*</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="input-field col s12 m6">
+                    <label for="telefone">Nº de telefone*</label>
+                    <input type="text" class="form-control" id="tel" name="tel" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" required>
+                </div>
+                <div class="input-field col s12">
+                    <button id="btnCadastrar" class="btn waves-effect waves-light blue">
+                        <i class="material-icons left">add</i>
+                        Cadastre-se
+                    </button>
+                    <button type="reset" id="btn-reset" class="btn waves-effect waves-light red">
+                        <i class="material-icons left">cancel</i>
+                        Cancelar
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- <form id="forms-alterar" class="forms-doador hidden" enctype="multipart/form-data">
+            <div class="cabecalho">
+                <h3>Alterar registro</h3>
+                <button id="btn-fechar2" class="btn-fechar" onclick="return false;">X</button>
+            </div>
+            <hr>
+            <div class="campo-img">
+                <img src="img/user.png" id="foto-perfil" class="foto-perfil">
+                <input type="file" name="foto" id="foto" accept="image/jpeg,image/png">
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="iddoador">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="telefone">Nº de telefone</label>
+                <input type="tel" class="form-control" id="tel" name="tel" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" required>
+            </div>
+            <div class="btn-group">
+                <button id="btnSalvar" class="btnCadastrar">Salvar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>  -->
+
+        <div class="row">
+            <div class="col s12">
+                <h1>Lista de doadores</h1>
+            </div>
+            <table id="table-doador" class="col s12 striped resposive-table centered">            
+                <thead class="green accent-4 white-text">
+                    <th scope="col"><i class="fa fa-key" aria-hidden="true"></i></th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Foto</th>
+                    <th scope="col">Opções</th>                
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="https://use.fontawesome.com/765bf1c0fd.js"></script>
+<script src="doador/js/Ajax.js"></script>
+<script src="doador/js/doador.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

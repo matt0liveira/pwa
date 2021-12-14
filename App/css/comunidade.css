@@ -1,0 +1,30 @@
+body{
+    position: relative;
+}
+
+.btn-voltar{
+    color: rgb(241, 79, 79);
+    position: absolute;
+    left: 1%;
+    top: 0%;
+    font-size: 1.5rem;
+}
+
+#forms-comunidade{
+    position: relative;
+}
+
+#btn-fechar{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modal{
+    background-color: #fff;
+}

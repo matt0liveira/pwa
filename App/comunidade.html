@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade</title>
+    <link rel="stylesheet" href="css/comunidade.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+             
+</head>
+<body>
+    <div class="container">
+        <a href="home.html" id="btn-voltar" class="btn-voltar"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        <form id="forms-comunidade">
+            <div class="row">
+                <h1 class="col s12">Cadastro de comunidade</h1>
+                <div class="input-field col s12">
+                    <label for="nome">Nome</label>         
+                    <input type="text" name="nome" id="nome" autocomplete="off" required>
+                </div>
+                <div class="input-field col s12">
+                    <button type="submit" id="btn-cadastrar" class="btn waves-effect waves-light blue" value="Cadastrar">
+                        <i class="material-icons left">add</i>
+                        cadastrar
+                    </button>
+                </div>     
+            </div>               
+        </form>
+
+        <form id="forms-alterar" class="modal">
+            <div class="row">
+                <div class="modal-content">
+                    <div class="col s12">
+                        <h3>Alterar comunidade</h3>
+                    </div>
+                    <div class="input-field col s12">
+                        <input type="hidden" name="idcomunidade">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" autocomplete="off">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="input-field col s12">
+                        <button type="submit" id="btnSalvar" class="waves-effect waves-light btn blue">
+                            <i class="material-icons left">save</i>
+                            Salvar
+                        </button>
+                        <button type="submit" class="modal-close waves-effect waves-light btn-flat red white-text" onclick="return false;">
+                            <i class="material-icons left">close</i>
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <h1>Lista de comunidades</h1>
+        <table id="table-comunidade" class="striped responsive-table centered">            
+            <thead class="green accent-4 white-text">
+                <th scope="col"><i class="fa fa-key" aria-hidden="true"></i></th>
+                <th scope="col">Nome</th>
+                <th scope="col">Opções</th>                
+            </thead>
+            <tbody></tbody>
+        </table>        
+    </div>  
+</body>
+<script src="https://use.fontawesome.com/5cfb8ad1d5.js"></script>
+<script src="comunidade/js/Ajax.js"></script>
+<script src="comunidade/js/comunidade.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html> 

@@ -1,0 +1,28 @@
+.container{
+    position: relative;
+}
+
+.btn-voltar{
+    color: rgb(241, 79, 79);
+    position: absolute;
+    left: 1%;
+    top: 0%;
+    font-size: 1.5rem;
+}
+
+.campo-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campo-img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-evenly;
+}

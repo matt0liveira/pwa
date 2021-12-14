@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <form id="formsDoador" enctype="multipart/form-data">
+            <h1>Crie uma conta</h1>
+            <div class="img-field">
+                <img src="img/user.png" id="previewImg">
+            </div>
+            <div class="file-field input-field">
+                <div class="btn blue lighten-1">
+                  <span>Foto de perfil:</span>
+                  <input type="file" name="foto" id="file" required>
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+            <div class="input-field">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" class="border-blue" required>
+            </div>
+            <div class="input-field">
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" class="border-blue" required>
+            </div>
+            <div class="input-field">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" class="border-blue" required>
+            </div>
+            <div class="input-field">
+                <label for="confirmSenha">Confirmar senha:</label>
+                <input type="password" name="confirmSenha" id="confirmSenha" class="border-blue" required>
+            </div>
+            <button type="submit" id="btnCadastrar" class="waves-effect waves-light btn  blue lighten-1">
+                <i class="material-icons left">add</i>
+                Cadastrar
+            </button>
+            <button type="reset" id="btn-reset" class="waves-effect waves-light btn  red">
+                <i class="material-icons left">cancel</i>
+                Cancelar
+            </button>
+            <br><br>
+            Já possui uma conta? <a href="login.html">Faça login</a>
+        </form>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="doador/js/Ajax.js"></script>
+<script src="doador/js/doador.js"></script>
+</html>

@@ -1,0 +1,32 @@
+{
+    "theme_color": "#42A5F5",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "http://localhost/serverphp/ATIVIDADE7_AJAX_MATHEUS_OLIVEIRA/App/home.html",
+    "start_url": "http://localhost/serverphp/ATIVIDADE7_AJAX_MATHEUS_OLIVEIRA/App/home.html",
+    "name": "Matheus Oliveira - PAM_ODS",
+    "short_name": "mattoliveira-PAM_ODS",
+    "description": "MATHEUS OLIVEIRA - Hospedagem e PWA",
+    "icons": [
+        {
+            "src": "icon/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "icon/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "icon/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
